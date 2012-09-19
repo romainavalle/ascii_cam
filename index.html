@@ -1,5 +1,25 @@
-<html>
-<head>
+<!doctype html>
+<!-- 
+         _           _            _   _         _                    _          _             _            _      
+        /\ \        /\ \         /\_\/\_\ _    / /\                 /\ \       /\ \     _    /\ \         /\ \    
+       /  \ \      /  \ \       / / / / //\_\ / /  \                \ \ \     /  \ \   /\_\ /  \ \____   /  \ \   
+      / /\ \ \    / /\ \ \     /\ \/ \ \/ / // / /\ \               /\ \_\   / /\ \ \_/ / // /\ \_____\ / /\ \ \  
+     / / /\ \_\  / / /\ \ \   /  \____\__/ // / /\ \ \             / /\/_/  / / /\ \___/ // / /\/___  // / /\ \_\ 
+    / / /_/ / / / / /  \ \_\ / /\/________// / /  \ \ \           / / /    / / /  \/____// / /   / / // / /_/ / / 
+   / / /__\/ / / / /   / / // / /\/_// / // / /___/ /\ \         / / /    / / /    / / // / /   / / // / /__\/ /  
+  / / /_____/ / / /   / / // / /    / / // / /_____/ /\ \       / / /    / / /    / / // / /   / / // / /_____/   
+ / / /\ \ \  / / /___/ / // / /    / / // /_________/\ \ \  ___/ / /__  / / /    / / / \ \ \__/ / // / /\ \ \     
+/ / /  \ \ \/ / /____\/ / \/_/    / / // / /_       __\ \_\/\__\/_/___\/ / /    / / /   \ \___\/ // / /  \ \ \    
+\/_/    \_\/\/_________/          \/_/ \_\___\     /____/_/\/_________/\/_/     \/_/     \/_____/ \/_/    \_\/    
+                                                                                                                
+
+-->
+<html lang="en">
+  <head>
+    <title>video ascii</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
 <script type="text/javascript" src="js/asciicam.js"></script>
 <style type="text/css">
   #div{
@@ -7,7 +27,33 @@
     top:0px;
     left:0px;
   }
-</style>
+  .ribbon {
+  background-color: #a00;
+  overflow: hidden;
+  -moz-box-shadow: 0 0 1em #888;
+  -webkit-box-shadow: 0 0 1em #888;
+  position: absolute;
+  left: -3em;
+  top: 2.5em;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Helvetiva Neue', Helvetica, Arial, sans-serif;
+  margin: 0.05em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+}
+    </style>
+  </head>
+  <body>
+    <div class="ribbon">
+    <a href="https://github.com/romaindr/ascii_cam" rel="me">Fork me on GitHub</a>
+  </div>
 </head>
 <body>
   <canvas id="canvas" width='640' height="480"></canvas>
